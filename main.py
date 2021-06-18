@@ -96,4 +96,4 @@ def converte_cliente(clientes):
         return a_dict #ordenando as tuplas em id, nome, email, cpf e sexo   
     return jsons.dump(list(map(cria_cliente_com_tupla, clientes)))
 
-app.run()
+app.run(host='0.0.0.0')
